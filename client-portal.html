@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal</title>
+    <link rel="stylesheet" href="client-portal.css">
+</head>
+<body>
+
+    <!-- Client Portal Container -->
+    <div class="dashboard-container">
+        <h1>Dedicated Client Portal</h1>
+
+        <!-- Document Sharing & Messaging Section -->
+        <div class="document-section">
+            <h2>Secure Document Sharing & Messaging</h2>
+            <p>Share and receive documents securely. You can also send messages to our team.</p>
+
+            <!-- Document Sharing -->
+            <div class="document-sharing">
+                <h3>Upload Documents</h3>
+                <input type="file" id="document-upload" />
+                <button onclick="uploadDocument()">Upload</button>
+                <div id="upload-status"></div>
+            </div>
+
+            <!-- Messaging -->
+            <div class="messaging">
+                <h3>Send a Message</h3>
+                <textarea id="client-message" placeholder="Type your message here..."></textarea>
+                <button onclick="sendMessage()">Send Message</button>
+                <div id="message-status"></div>
+            </div>
+        </div>
+
+        <!-- Project Status & Financials Section -->
+        <div class="project-status-section">
+            <h2>Real-time Project Updates & Financials</h2>
+            <p>Stay updated on the current status of your projects and financials.</p>
+            <div class="project-details">
+                <h3>Project Name: New Website Development</h3>
+                <p>Status: <span id="project-status">In Progress</span></p>
+                <p>Financials: <span id="project-financials">$10,000</span> (Total Budget)</p>
+                <button onclick="refreshProjectStatus()">Refresh Status</button>
+            </div>
+        </div>
+
+        <!-- Client-specific Dashboards and Reports Section -->
+        <div class="client-dashboard-section">
+            <h2>Client-specific Dashboards & Reports</h2>
+            <p>View custom dashboards and reports specific to your account.</p>
+            <div id="client-dashboard">
+                <h3>Your Financial Summary</h3>
+                <p>Total Revenue: $50,000</p>
+                <p>Total Expenses: $25,000</p>
+                <p>Net Profit: $25,000</p>
+            </div>
+            <button onclick="generateClientReport()">Generate Report</button>
+            <div id="report-status"></div>
+        </div>
+
+        <!-- Integration with Business Tools Section -->
+        <div class="integration-section">
+            <h2>Integration with Business Tools</h2>
+            <p>Integrate with various business tools to streamline your operations.</p>
+            <button onclick="integrateWithTools()">Integrate Tools</button>
+            <div id="integration-status"></div>
+        </div>
+
+    </div>
+
+    <script src="client-portal.js"></script>
+</body>
+</html>
+

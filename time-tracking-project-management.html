@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Payroll Software</title>
+    <link rel="stylesheet" href="time-tracking-project-management.css">
+</head>
+<body>
+    <nav>
+        <h1>Payroll Management</h1>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#payroll">Automated Payroll</a></li>
+            <li><a href="#tax-management">Tax Compliance</a></li>
+            <li><a href="#direct-deposit">Direct Deposit</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#garnishments">Garnishments</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#international-payroll">International Payroll</a></li>
+        </ul>
+    </nav>
+
+    <main id="dashboard">
+        <section>
+            <h2>Payroll Dashboard</h2>
+            <p>Welcome, Admin. Manage payroll, taxes, and employee benefits efficiently.</p>
+        </section>
+    </main>
+
+    <main id="payroll" style="display: none;">
+        <section>
+            <h2>Automated Payroll Processing</h2>
+            <button id="run-payroll">Run Payroll</button>
+            <p>Status: <span id="payroll-status">Not Processed</span></p>
+        </section>
+    </main>
+
+    <main id="tax-management" style="display: none;">
+        <section>
+            <h2>Tax Management & Compliance</h2>
+            <p>Federal Taxes: $<span id="federal-taxes">12,500</span></p>
+            <p>State Taxes: $<span id="state-taxes">6,000</span></p>
+        </section>
+    </main>
+
+    <main id="direct-deposit" style="display: none;">
+        <section>
+            <h2>Direct Deposit & Payment Options</h2>
+            <button id="process-direct-deposit">Process Direct Deposits</button>
+            <p>Status: <span id="deposit-status">Pending</span></p>
+        </section>
+    </main>
+
+    <main id="attendance" style="display: none;">
+        <section>
+            <h2>Time and Attendance Integration</h2>
+            <p>Total Hours Worked: <span id="hours-worked">160</span></p>
+            <p>Overtime: <span id="overtime">12</span> hours</p>
+        </section>
+    </main>
+
+    <main id="garnishments" style="display: none;">
+        <section>
+            <h2>Garnishment Management</h2>
+            <p>Total Garnishments: $<span id="garnishment-amount">2,500</span></p>
+            <button id="process-garnishments">Process Garnishments</button>
+        </section>
+    </main>
+
+    <main id="reports" style="display: none;">
+        <section>
+            <h2>Customizable Payroll Reports</h2>
+            <form id="report-form">
+                <label for="report-type">Report Type:</label>
+                <select id="report-type">
+                    <option value="earnings">Earnings</option>
+                    <option value="tax">Tax Liability</option>
+                    <option value="benefits">Benefits</option>
+                </select>
+                <button type="submit">Generate Report</button>
+            </form>
+        </section>
+    </main>
+
+    <main id="benefits" style="display: none;">
+        <section>
+            <h2>Benefits Administration</h2>
+            <p>Health Insurance: Opted In</p>
+            <p>401(k): Employee: 6%, Employer: 3%</p>
+        </section>
+    </main>
+
+    <main id="international-payroll" style="display: none;">
+        <section>
+            <h2>Multi-State and International Payroll</h2>
+            <p>State Tax Withheld: $<span id="multi-state-tax">5,500</span></p>
+            <p>Currency Conversion: 1 USD = 0.87 EUR</p>
+        </section>
+    </main>
+
+    <script src="time-tracking-project-management.js"></script>
+
+
+</body>
+</html>

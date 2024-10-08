@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Management Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Home Page Dashboard Container -->
+    <div class="dashboard-container">
+        <h1>Business Management Platform</h1>
+        <p>Navigate through the different sections to manage your business operations.</p>
+
+        <!-- Dashboard Menu -->
+        <div class="dashboard-menu">
+            <button onclick="navigateTo('timeTracking')">Time Tracking & Project Management</button>
+            <button onclick="navigateTo('bankReconciliation')">bank reconciliation</button>
+            <button onclick="navigateTo('metrics')">Metrics, Insights & Balance Forecast</button>
+            <button onclick="navigateTo('invoicing')">Invoicing & Payment Processing</button>
+            <button onclick="navigateTo('clientPortal')">Client Portal</button>
+            <button onclick="navigateTo('inventory')">Inventory Management</button>
+            <button onclick="navigateTo('dashboard')">Dashboard</button>
+            <button onclick="navigateTo('profile')">Profile</button>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content" class="page-content">
+            <h2>Welcome to Your Dashboard</h2>
+            <p>Select an option from the menu to access various tools and features of the platform.</p>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

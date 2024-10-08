@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Reporting System</title>
+    <link rel="stylesheet" href="financial-reporting.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Reporting Dashboard</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#financial-statements">Customizable Financial Statements</a></li>
+            <li><a href="#dashboards">Dynamic Dashboards</a></li>
+            <li><a href="#reports">Custom Reports</a></li>
+            <li><a href="#compliance">Compliance Reporting</a></li>
+            <li><a href="#budgeting">Budgeting & Forecasting</a></li>
+        </ul>
+    </nav>
+
+    <section id="financial-statements">
+        <h2>Generate Financial Statements</h2>
+        <form id="statement-form">
+            <label for="statement-type">Statement Type:</label>
+            <select id="statement-type" name="statement-type">
+                <option value="income">Income Statement</option>
+                <option value="balance">Balance Sheet</option>
+                <option value="cashflow">Cash Flow Statement</option>
+            </select>
+            <button type="submit">Generate</button>
+        </form>
+        <div id="statement-result">
+            <!-- Financial statement results will be displayed here -->
+        </div>
+    </section>
+
+    <section id="dashboards">
+        <h2>Dynamic Financial Dashboards</h2>
+        <div id="dashboard">
+            <!-- Dynamic charts and graphs for financial metrics -->
+        </div>
+    </section>
+
+    <section id="reports">
+        <h2>Custom Reporting & Analytics</h2>
+        <button id="generate-custom-report">Generate Custom Report</button>
+        <div id="custom-report-result">
+            <!-- Custom report results will be displayed here -->
+        </div>
+    </section>
+
+    <section id="compliance">
+        <h2>Compliance Reporting</h2>
+        <p>GAAP, IFRS, and SOX compliance reports available here. Contact admin for more information.</p>
+    </section>
+
+    <section id="budgeting">
+        <h2>Budgeting & Forecasting Tools</h2>
+        <button id="generate-budget-report">Generate Budget Report</button>
+        <div id="budget-report-result">
+            <!-- Budget report results will be displayed here -->
+        </div>
+    </section>
+
+    <script src="financial-reporting.js"></script>
+    <script src="Financial ReportingBE.js"></script>
+</body>
+</html>

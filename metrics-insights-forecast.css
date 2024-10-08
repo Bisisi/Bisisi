@@ -1,0 +1,80 @@
+/* General styling for the metrics, insights, and forecast page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Metrics & Insights container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #002855; /* Dark Blue from logo */
+}
+
+h2 {
+    color: #0076A8; /* Lighter Blue */
+    margin-top: 30px;
+}
+
+.metrics-section, .insights-section, .forecast-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+p, ul {
+    color: #595959;
+}
+
+/* Metrics overview styling */
+.metrics-overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metric {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.metric h3 {
+    color: #0076A8;
+}
+
+/* Button styling */
+button {
+    background-color: #0076A8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f85;
+}
+
+/* Forecast results */
+.forecast-results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #333;
+    display: none;
+}

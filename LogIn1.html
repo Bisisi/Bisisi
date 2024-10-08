@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Loginstyle.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Sign In</h1>
+        
+        <!-- Sign In Form -->
+        <form id="signInForm">
+            <div class="form-group">
+                <label for="signInEmail">Email</label>
+                <input type="email" id="signInEmail" placeholder="Enter your email" required>
+                <span id="signInEmailError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="signInPassword">Password</label>
+                <input type="password" id="signInPassword" placeholder="Enter your password" required>
+                <span id="signInPasswordError" class="error-message"></span>
+            </div>
+
+            <button type="button" onclick="signIn()">Sign In</button>
+
+            <div class="links">
+                <p>Don't have an account? <a href="#" onclick="showCreateAccount()">Create one</a></p>
+                <p>Forgot your password? <a href="#" onclick="resetPassword()">Reset it</a></p>
+            </div>
+        </form>
+
+        <div id="successMessage" class="success-message"></div>
+    </div>
+
+    <!-- Create Account Form -->
+    <div class="form-container" id="createAccountForm" style="display: none;">
+        <h1>Create Account</h1>
+        <form id="createAccount">
+            <div class="form-group">
+                <label for="createEmail">Email</label>
+                <input type="email" id="createEmail" placeholder="Enter your email" required>
+                <span id="createEmailError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="createPassword">Password</label>
+                <input type="password" id="createPassword" placeholder="Enter your password" required>
+                <span id="createPasswordError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                <span id="confirmPasswordError" class="error-message"></span>
+            </div>
+
+            <button type="button" onclick="createAccount()">Create Account</button>
+            <span id="createSuccessMessage" class="success-message"></span>
+        </form>
+    </div>
+
+    <script src="Loginscript.js"></script>
+</body>
+</html>

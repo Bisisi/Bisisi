@@ -1,0 +1,81 @@
+/* General styling for the client portal page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Client portal container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #002855; /* Dark Blue from logo */
+}
+
+h2 {
+    color: #0076A8; /* Lighter Blue */
+    margin-top: 30px;
+}
+
+.document-section, .project-status-section, .client-dashboard-section, .integration-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #595959;
+}
+
+/* Document Sharing & Messaging */
+.document-sharing, .messaging {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+    background-color: #0076A8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f85;
+}
+
+/* Status output */
+#upload-status, #message-status, #project-status, #report-status, #integration-status {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Client-specific Dashboard */
+#client-dashboard {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}

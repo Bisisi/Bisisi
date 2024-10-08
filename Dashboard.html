@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Reporting & Dashboards</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <h1>Financial Reporting & Dashboards</h1>
+
+        <!-- Reporting & Analytics Section -->
+        <div class="report-section">
+            <h2>Customizable Financial Reports</h2>
+            <p>Create your own financial reports. Choose from P&L, Balance Sheets, and Cash Flow Statements.</p>
+            <div class="report-options">
+                <button onclick="generateReport('P&L')">Profit & Loss</button>
+                <button onclick="generateReport('BalanceSheet')">Balance Sheet</button>
+                <button onclick="generateReport('CashFlow')">Cash Flow Statement</button>
+            </div>
+            <div id="report-output" class="report-output">
+                <!-- Generated reports will appear here -->
+            </div>
+        </div>
+
+        <!-- Real-Time Dashboards Section -->
+        <div class="dashboard-section">
+            <h2>Real-Time Dashboards</h2>
+            <div class="dashboard-metrics">
+                <div class="metric">
+                    <h3>Revenue</h3>
+                    <p>$500,000</p>
+                </div>
+                <div class="metric">
+                    <h3>Expenses</h3>
+                    <p>$250,000</p>
+                </div>
+                <div class="metric">
+                    <h3>Net Profit</h3>
+                    <p>$250,000</p>
+                </div>
+                <div class="metric">
+                    <h3>Financial Forecast</h3>
+                    <p>Projected Growth: 12%</p>
+                </div>
+            </div>
+            <button onclick="drillDown()">Drill Down into Details</button>
+        </div>
+
+        <!-- Projection & Financial Forecast Section -->
+        <div class="forecast-section">
+            <h2>Projection & Financial Forecast</h2>
+            <p>View future financial projections based on your current data.</p>
+            <button onclick="showForecast()">Show Forecast</button>
+            <div id="forecast-output" class="forecast-output"></div>
+        </div>
+
+        <!-- Reporting & Analytics Section -->
+        <div class="analytics-section">
+            <h2>Reporting & Analytics</h2>
+            <p>Analyze your metrics and insights with detailed financial analysis tools.</p>
+            <ul>
+                <li>Key Metrics</li>
+                <li>Balance Insights</li>
+                <li>Expense Breakdown</li>
+                <li>Profit Margins</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+
+<script>
+  

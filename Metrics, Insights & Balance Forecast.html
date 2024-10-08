@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics, Insights & Balance Forecast</title>
+    <link rel="stylesheet" href="metrics-insights-forecast.css">
+</head>
+<body>
+
+    <!-- Metrics, Insights & Forecast Container -->
+    <div class="dashboard-container">
+        <h1>Metrics, Insights & Balance Forecast</h1>
+
+        <!-- Metrics Overview Section -->
+        <div class="metrics-section">
+            <h2>Key Metrics Overview</h2>
+            <p>View your current financial metrics including revenue, expenses, and net profit.</p>
+            <div class="metrics-overview">
+                <div class="metric">
+                    <h3>Revenue</h3>
+                    <p>$50,000</p>
+                </div>
+                <div class="metric">
+                    <h3>Expenses</h3>
+                    <p>$25,000</p>
+                </div>
+                <div class="metric">
+                    <h3>Net Profit</h3>
+                    <p>$25,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Insights Section -->
+        <div class="insights-section">
+            <h2>Insights</h2>
+            <p>Analyze key financial trends based on your metrics.</p>
+            <ul>
+                <li>Revenue has increased by 10% compared to the last quarter.</li>
+                <li>Expenses are within the budget range, with a slight increase of 5% due to operational costs.</li>
+                <li>Net profit margin is stable at 50%, reflecting strong financial health.</li>
+            </ul>
+        </div>
+
+        <!-- Balance Forecast Section -->
+        <div class="forecast-section">
+            <h2>Balance Forecast</h2>
+            <p>Forecast your future balance based on current trends.</p>
+            <button onclick="generateForecast()">Generate Forecast</button>
+            <div id="forecast-results" class="forecast-results">
+                <!-- Forecast results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="metrics-insights-forecast.js"></script>
+</body>
+</html>

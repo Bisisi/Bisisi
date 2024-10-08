@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="inventory-management.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inventory Management System</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#reorder">Reordering</a></li>
+                <li><a href="#warehouses">Multi-Warehouses</a></li>
+                <li><a href="#purchase-orders">Purchase Orders</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </nav>
+
+        <section id="inventory">
+            <h2>Real-Time Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Stock Level</th>
+                        <th>Category</th>
+                        <th>Barcode</th>
+                        <th>Expiry Date</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-data">
+                    <!-- Dynamically loaded inventory items -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reorder">
+            <h2>Reorder Notifications</h2>
+            <form id="reorder-form">
+                <label for="reorder-point">Set Reorder Point:</label>
+                <input type="number" id="reorder-point" name="reorder-point">
+                <button type="submit">Set Reorder Point</button>
+            </form>
+            <div id="reorder-alerts">
+                <!-- Reorder alerts will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="warehouses">
+            <h2>Multi-Warehouse Management</h2>
+            <form id="warehouse-form">
+                <label for="warehouse">Select Warehouse:</label>
+                <select id="warehouse">
+                    <option value="warehouse1">Warehouse 1</option>
+                    <option value="warehouse2">Warehouse 2</option>
+                    <!-- More warehouses can be dynamically added -->
+                </select>
+                <button type="submit">Track Stock</button>
+            </form>
+        </section>
+
+        <section id="purchase-orders">
+            <h2>Purchase Order Management</h2>
+            <form id="po-form">
+                <label for="vendor">Select Vendor:</label>
+                <select id="vendor">
+                    <!-- Dynamically populated list of vendors -->
+                </select>
+                <label for="po-amount">Order Amount:</label>
+                <input type="number" id="po-amount">
+                <button type="submit">Generate Purchase Order</button>
+            </form>
+            <div id="po-list">
+                <!-- List of POs generated -->
+            </div>
+        </section>
+
+        <section id="reports">
+            <h2>Inventory Reports</h2>
+            <button id="generate-report">Generate Report</button>
+            <div id="report-output">
+                <!-- Dynamic reports will be shown here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="inventory-management.js"></script>
+    <script src="InventoryBackend Code.js"></script>
+</body>
+</html>
